@@ -1,0 +1,101 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - CocoaLumberjack (2.2.0):
+    - CocoaLumberjack/Default (= 2.2.0)
+    - CocoaLumberjack/Extensions (= 2.2.0)
+  - CocoaLumberjack/Core (2.2.0)
+  - CocoaLumberjack/Default (2.2.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.2.0):
+    - CocoaLumberjack/Default
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - DACircularProgress (2.3.1)
+  - Fabric (1.6.7)
+  - FLAnimatedImage (1.0.12)
+  - Fuzi (0.3.1)
+  - IDMPhotoBrowser (1.8.4):
+    - DACircularProgress
+    - pop
+    - SDWebImage
+  - NSURL+QueryDictionary (1.1.0)
+  - NYTPhotoViewer (1.1.0):
+    - NYTPhotoViewer/AnimatedGifSupport (= 1.1.0)
+    - NYTPhotoViewer/Core (= 1.1.0)
+  - NYTPhotoViewer/AnimatedGifSupport (1.1.0):
+    - FLAnimatedImage (~> 1.0.8)
+    - NYTPhotoViewer/Core
+  - NYTPhotoViewer/Core (1.1.0)
+  - pop (1.0.9)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+  - SnapKit (0.20.0)
+  - SwiftHEXColors (1.0.4)
+  - TCBlobDownloadSwift (0.1.13)
+  - UIImageColors (1.0.3)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1)
+  - CocoaLumberjack (~> 2.2)
+  - Crashlytics
+  - Fabric (~> 1.6)
+  - Fuzi (~> 0.3.0)
+  - IDMPhotoBrowser
+  - NSURL+QueryDictionary (~> 1.1)
+  - NYTPhotoViewer (~> 1.1.0)
+  - SDWebImage (~> 3.7)
+  - SnapKit (~> 0.20)
+  - SwiftHEXColors (~> 1.0)
+  - TCBlobDownloadSwift (from `https://github.com/abodnyaUA/TCBlobDownloadSwift.git`)
+  - UIImageColors (from `https://github.com/jathu/UIImageColors.git`)
+
+EXTERNAL SOURCES:
+  TCBlobDownloadSwift:
+    :git: https://github.com/abodnyaUA/TCBlobDownloadSwift.git
+  UIImageColors:
+    :git: https://github.com/jathu/UIImageColors.git
+
+CHECKOUT OPTIONS:
+  TCBlobDownloadSwift:
+    :commit: ac1ebb7c4c38f761dcc69ca15c25f34f6e092b41
+    :git: https://github.com/abodnyaUA/TCBlobDownloadSwift.git
+  UIImageColors:
+    :commit: 4843cce131449b097431ed45edede4fd62c2365e
+    :git: https://github.com/jathu/UIImageColors.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  Fuzi: 25118b725a1637f1676f63ae1acbba1f30a5dd6c
+  IDMPhotoBrowser: b574fe3229754e701f32df271afbc4ac7e4e1997
+  NSURL+QueryDictionary: dd0a5fec689a9b4780b6fa0e0225c01ca3ea653e
+  NYTPhotoViewer: e80e8767f3780d2df37c6f72cbab15d6c7232911
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
+  SwiftHEXColors: b0ecc7bd83a1aa2e1956f9ba51f55ebb2bcf86ef
+  TCBlobDownloadSwift: 3eaa47b659b37f54e6184e27235d1dc4b195e472
+  UIImageColors: 3c3b04ecd5786d3235f7f783316c6ef0f631216d
+
+PODFILE CHECKSUM: 2715c27f147631eeba884b90c5d2bc10438438c7
+
+COCOAPODS: 1.0.0.beta.2

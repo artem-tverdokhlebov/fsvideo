@@ -1,0 +1,6 @@
+framework module TCBlobDownloadSwift {
+  umbrella header "TCBlobDownloadSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

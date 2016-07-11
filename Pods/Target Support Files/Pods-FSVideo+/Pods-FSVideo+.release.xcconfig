@@ -1,0 +1,11 @@
+EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Crashlytics/iOS" "${PODS_ROOT}/Fabric/iOS"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 ANIMATED_GIF_SUPPORT=1
+HEADER_SEARCH_PATHS = $(SDKROOT)/usr/include/libxml2 $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Crashlytics" "${PODS_ROOT}/Headers/Public/Fabric"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/AFNetworking.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/CocoaLumberjack.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/DACircularProgress.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/FLAnimatedImage.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Fuzi.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/IDMPhotoBrowser.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/NSURL_QueryDictionary.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/NYTPhotoViewer.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/SDWebImage.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/SnapKit.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/SwiftHEXColors.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/TCBlobDownloadSwift.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/UIImageColors.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/pop.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Crashlytics" -isystem "${PODS_ROOT}/Headers/Public/Fabric"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"z" -framework "AFNetworking" -framework "CocoaLumberjack" -framework "Crashlytics" -framework "DACircularProgress" -framework "FLAnimatedImage" -framework "Fabric" -framework "Fuzi" -framework "IDMPhotoBrowser" -framework "NSURL_QueryDictionary" -framework "NYTPhotoViewer" -framework "SDWebImage" -framework "Security" -framework "SnapKit" -framework "SwiftHEXColors" -framework "SystemConfiguration" -framework "TCBlobDownloadSwift" -framework "UIImageColors" -framework "UIKit" -framework "pop"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-FSVideo+
+PODS_ROOT = ${SRCROOT}/Pods
+SWIFT_INCLUDE_PATHS = $(SRCROOT)/Fuzi/libxml2

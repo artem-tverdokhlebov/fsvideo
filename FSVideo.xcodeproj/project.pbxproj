@@ -1,0 +1,1416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D7C9B336899C4FCC442BD65 /* Pods_FSVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43A0EC25F361D6ADD561736 /* Pods_FSVideo.framework */; };
+		79125F621CBAF33800FAC9FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79125F561CBAF33800FAC9FF /* Assets.xcassets */; };
+		79125F631CBAF33800FAC9FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79125F571CBAF33800FAC9FF /* LaunchScreen.storyboard */; };
+		79125F641CBAF33800FAC9FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79125F591CBAF33800FAC9FF /* Main.storyboard */; };
+		79125F651CBAF33800FAC9FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125F5D1CBAF33800FAC9FF /* AppDelegate.swift */; };
+		79125F691CBAF37B00FAC9FF /* DataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79125F671CBAF37B00FAC9FF /* DataBase.xcdatamodeld */; };
+		79125F931CBB001C00FAC9FF /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125F921CBB001C00FAC9FF /* StringExtensions.swift */; };
+		79125F951CBB024700FAC9FF /* NSURLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125F941CBB024700FAC9FF /* NSURLExtensions.swift */; };
+		79125FB11CBB0DE600FAC9FF /* FSLocalStorage+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125F9F1CBB0DE600FAC9FF /* FSLocalStorage+Context.swift */; };
+		79125FB21CBB0DE600FAC9FF /* FSLocalStorage+Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125FA01CBB0DE600FAC9FF /* FSLocalStorage+Entities.swift */; };
+		79125FB31CBB0DE600FAC9FF /* FSLocalStorage+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125FA11CBB0DE600FAC9FF /* FSLocalStorage+Fetch.swift */; };
+		79125FB41CBB0DE600FAC9FF /* FSLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125FA21CBB0DE600FAC9FF /* FSLocalStorage.swift */; };
+		79125FB51CBB0DE600FAC9FF /* FSDatabaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125FA41CBB0DE600FAC9FF /* FSDatabaseEntity.swift */; };
+		79125FC51CBC3D5B00FAC9FF /* FSWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125FC41CBC3D5B00FAC9FF /* FSWebServices.swift */; };
+		79125FC81CBC3E3400FAC9FF /* FSWebRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125FC71CBC3E3400FAC9FF /* FSWebRequest.swift */; };
+		79125FCA1CBC3F6E00FAC9FF /* FSSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125FC91CBC3F6E00FAC9FF /* FSSearchRequest.swift */; };
+		7912602C1CBD743800FAC9FF /* FSFoldersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7912602B1CBD743800FAC9FF /* FSFoldersRequest.swift */; };
+		791260521CBD9D1500FAC9FF /* FSFileURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791260511CBD9D1500FAC9FF /* FSFileURLRequest.swift */; };
+		791260551CBE33D100FAC9FF /* SetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791260541CBE33D100FAC9FF /* SetExtensions.swift */; };
+		791260571CBE3D0300FAC9FF /* FSReviewsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791260561CBE3D0300FAC9FF /* FSReviewsRequest.swift */; };
+		79140DDB1D1BB183004FE168 /* FSFilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697AC1CC3899C000E495E /* FSFilesViewController.swift */; };
+		79140DDC1D1BB183004FE168 /* FSMovieMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442171CD91F2600178065 /* FSMovieMachine.swift */; };
+		79140DDD1D1BB183004FE168 /* UIImageView+Fade.m in Sources */ = {isa = PBXBuildFile; fileRef = 792697881CC29E2F000E495E /* UIImageView+Fade.m */; };
+		79140DDE1D1BB183004FE168 /* FSPredefinedTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697711CC2714E000E495E /* FSPredefinedTableViewDataSource.swift */; };
+		79140DDF1D1BB183004FE168 /* FSWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125FC41CBC3D5B00FAC9FF /* FSWebServices.swift */; };
+		79140DE01D1BB183004FE168 /* FSPredefinedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697771CC2783E000E495E /* FSPredefinedTableViewCell.swift */; };
+		79140DE11D1BB183004FE168 /* FSReviewMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442181CD91F2600178065 /* FSReviewMachine.swift */; };
+		79140DE21D1BB183004FE168 /* FSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795F22091CE6736900AC6C71 /* FSLog.swift */; };
+		79140DE31D1BB183004FE168 /* NSURLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125F941CBB024700FAC9FF /* NSURLExtensions.swift */; };
+		79140DE41D1BB183004FE168 /* EXSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799441F51CD521DE00178065 /* EXSearchRequest.swift */; };
+		79140DE51D1BB183004FE168 /* FSTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926977F1CC292A4000E495E /* FSTheme.swift */; };
+		79140DE61D1BB183004FE168 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926977B1CC27BFB000E495E /* UIViewControllerExtensions.swift */; };
+		79140DE71D1BB183004FE168 /* FSFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442081CD91F2600178065 /* FSFolder.swift */; };
+		79140DE81D1BB183004FE168 /* FSRecentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E232F61CC56D84007EB1D8 /* FSRecentsViewController.swift */; };
+		79140DE91D1BB183004FE168 /* FSMovieReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926979F1CC2C261000E495E /* FSMovieReviewCell.swift */; };
+		79140DEA1D1BB183004FE168 /* FSFileMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442121CD91F2600178065 /* FSFileMachine.swift */; };
+		79140DEB1D1BB183004FE168 /* FSAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CE1DC71CCAB81900134788 /* FSAboutViewController.swift */; };
+		79140DEC1D1BB183004FE168 /* FSSearchResultsTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799441FF1CD7595A00178065 /* FSSearchResultsTableDataSource.swift */; };
+		79140DED1D1BB183004FE168 /* FSSearchQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7994420E1CD91F2600178065 /* FSSearchQuery.swift */; };
+		79140DEE1D1BB183004FE168 /* FSSettingsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442031CD9169800178065 /* FSSettingsContentViewController.swift */; };
+		79140DEF1D1BB183004FE168 /* FSFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442071CD91F2600178065 /* FSFile.swift */; };
+		79140DF01D1BB183004FE168 /* FSSearchQueryMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442191CD91F2600178065 /* FSSearchQueryMachine.swift */; };
+		79140DF11D1BB183004FE168 /* FSReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7994420D1CD91F2600178065 /* FSReview.swift */; };
+		79140DF21D1BB183004FE168 /* FSSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125FC91CBC3F6E00FAC9FF /* FSSearchRequest.swift */; };
+		79140DF31D1BB183004FE168 /* XMLElementExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799441F71CD5DB9600178065 /* XMLElementExtensions.swift */; };
+		79140DF41D1BB183004FE168 /* UIImage+ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 792697B61CC3BD57000E495E /* UIImage+ProgressView.m */; };
+		79140DF51D1BB183004FE168 /* FSFileURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791260511CBD9D1500FAC9FF /* FSFileURLRequest.swift */; };
+		79140DF61D1BB183004FE168 /* FSSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E232FE1CC582D4007EB1D8 /* FSSettingsViewController.swift */; };
+		79140DF71D1BB183004FE168 /* FSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CE1DC11CCAACD700134788 /* FSTableViewController.swift */; };
+		79140DF81D1BB183004FE168 /* FSMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697751CC27815000E495E /* FSMovieViewController.swift */; };
+		79140DF91D1BB183004FE168 /* FSYearMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7994421A1CD91F2600178065 /* FSYearMachine.swift */; };
+		79140DFA1D1BB183004FE168 /* FSFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697AE1CC38DB0000E495E /* FSFileCell.swift */; };
+		79140DFB1D1BB183004FE168 /* FSDatabaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125FA41CBB0DE600FAC9FF /* FSDatabaseEntity.swift */; };
+		79140DFC1D1BB183004FE168 /* FSDownloadedFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FBDAC11CC43437001841B7 /* FSDownloadedFileCell.swift */; };
+		79140DFD1D1BB183004FE168 /* FSSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79268C1A1CC23BE6000E495E /* FSSearchViewController.swift */; };
+		79140DFE1D1BB183004FE168 /* FSYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7994420F1CD91F2600178065 /* FSYear.swift */; };
+		79140DFF1D1BB183004FE168 /* FSMovieFolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697A31CC2E1BC000E495E /* FSMovieFolderCell.swift */; };
+		79140E001D1BB183004FE168 /* FSMovieCastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926979D1CC2BDB9000E495E /* FSMovieCastCell.swift */; };
+		79140E011D1BB183004FE168 /* FSItemLinkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697B31CC3BADF000E495E /* FSItemLinkInfo.swift */; };
+		79140E021D1BB183004FE168 /* FSCountryMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442111CD91F2600178065 /* FSCountryMachine.swift */; };
+		79140E031D1BB183004FE168 /* FSFileCellTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799441FB1CD678A400178065 /* FSFileCellTableDelegate.swift */; };
+		79140E041D1BB183004FE168 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E233001CC6B1CC007EB1D8 /* UIImageExtensions.swift */; };
+		79140E051D1BB183004FE168 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697931CC2AA86000E495E /* UIColorExtensions.swift */; };
+		79140E061D1BB183004FE168 /* FSReviewsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791260561CBE3D0300FAC9FF /* FSReviewsRequest.swift */; };
+		79140E071D1BB183004FE168 /* EXMovieInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799441F91CD60C2300178065 /* EXMovieInfoRequest.swift */; };
+		79140E081D1BB183004FE168 /* UIBarButtonItem+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 792697911CC29EAD000E495E /* UIBarButtonItem+Appearance.m */; };
+		79140E091D1BB183004FE168 /* EXReviewsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799441FD1CD740C100178065 /* EXReviewsRequest.swift */; };
+		79140E0A1D1BB183004FE168 /* FSCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442061CD91F2600178065 /* FSCountry.swift */; };
+		79140E0B1D1BB183004FE168 /* FSLocalStorage+Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125FA01CBB0DE600FAC9FF /* FSLocalStorage+Entities.swift */; };
+		79140E0C1D1BB183004FE168 /* FSSwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797536AD1CCFF9B90028E16C /* FSSwitchTableViewCell.swift */; };
+		79140E0D1D1BB183004FE168 /* FSHumanMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442151CD91F2600178065 /* FSHumanMachine.swift */; };
+		79140E0E1D1BB183004FE168 /* FSLocalStorage+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125F9F1CBB0DE600FAC9FF /* FSLocalStorage+Context.swift */; };
+		79140E0F1D1BB183004FE168 /* FSTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CE1DC91CCAD27000134788 /* FSTextViewController.swift */; };
+		79140E101D1BB183004FE168 /* FSHuman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7994420A1CD91F2600178065 /* FSHuman.swift */; };
+		79140E111D1BB183004FE168 /* FSMovieInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697971CC2B24B000E495E /* FSMovieInfoCell.swift */; };
+		79140E121D1BB183004FE168 /* FSMovieSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926979B1CC2BA32000E495E /* FSMovieSummaryCell.swift */; };
+		79140E131D1BB183004FE168 /* FSAboutFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797536AB1CCEC0BD0028E16C /* FSAboutFooterCell.swift */; };
+		79140E151D1BB183004FE168 /* FSColorBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697A11CC2C3DF000E495E /* FSColorBundle.swift */; };
+		79140E161D1BB183004FE168 /* FSMovieSegmentControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697951CC2B0B8000E495E /* FSMovieSegmentControlCell.swift */; };
+		79140E171D1BB183004FE168 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125F5D1CBAF33800FAC9FF /* AppDelegate.swift */; };
+		79140E181D1BB183004FE168 /* EXFileURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442321CDBF8D400178065 /* EXFileURLRequest.swift */; };
+		79140E191D1BB183004FE168 /* FSGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442091CD91F2600178065 /* FSGenre.swift */; };
+		79140E1A1D1BB183004FE168 /* FSLocalStorage+Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125FA11CBB0DE600FAC9FF /* FSLocalStorage+Fetch.swift */; };
+		79140E1B1D1BB183004FE168 /* FSFolderMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442131CD91F2600178065 /* FSFolderMachine.swift */; };
+		79140E1C1D1BB183004FE168 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125F921CBB001C00FAC9FF /* StringExtensions.swift */; };
+		79140E1D1D1BB183004FE168 /* FSMovieInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697991CC2B392000E495E /* FSMovieInformationCell.swift */; };
+		79140E1E1D1BB183004FE168 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 7976A5AD1CDFE8A000D8B574 /* UIDevice-Hardware.m */; };
+		79140E1F1D1BB183004FE168 /* FSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79268C181CC23BE6000E495E /* FSTabBarController.swift */; };
+		79140E201D1BB183004FE168 /* FSVideoPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FBDAB91CC3CC03001841B7 /* FSVideoPlayerController.swift */; };
+		79140E211D1BB183004FE168 /* FSImageMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442161CD91F2600178065 /* FSImageMachine.swift */; };
+		79140E221D1BB183004FE168 /* FSFoldersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7912602B1CBD743800FAC9FF /* FSFoldersRequest.swift */; };
+		79140E231D1BB183004FE168 /* FSMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926976F1CC23E64000E495E /* FSMovieTableViewCell.swift */; };
+		79140E241D1BB183004FE168 /* FSWebRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125FC71CBC3E3400FAC9FF /* FSWebRequest.swift */; };
+		79140E251D1BB183004FE168 /* FSMovieHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697791CC27B1B000E495E /* FSMovieHeaderCell.swift */; };
+		79140E261D1BB183004FE168 /* FSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CE1DBF1CC9759C00134788 /* FSConfig.swift */; };
+		79140E271D1BB183004FE168 /* SetExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791260541CBE33D100FAC9FF /* SetExtensions.swift */; };
+		79140E281D1BB183004FE168 /* FSPredefinedTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697731CC27168000E495E /* FSPredefinedTableViewSection.swift */; };
+		79140E291D1BB183004FE168 /* FSSettingsThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CE1DC51CCAB54F00134788 /* FSSettingsThemeViewController.swift */; };
+		79140E2A1D1BB183004FE168 /* FSMoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E232F91CC57EAD007EB1D8 /* FSMoviesListViewController.swift */; };
+		79140E2B1D1BB183004FE168 /* FSMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7994420C1CD91F2600178065 /* FSMovie.swift */; };
+		79140E2C1D1BB183004FE168 /* FSFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E232FB1CC57F3D007EB1D8 /* FSFavoritesViewController.swift */; };
+		79140E2D1D1BB183004FE168 /* FSItemLinkResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697B11CC39F84000E495E /* FSItemLinkResolver.swift */; };
+		79140E2E1D1BB183004FE168 /* DataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79125F671CBAF37B00FAC9FF /* DataBase.xcdatamodeld */; };
+		79140E2F1D1BB183004FE168 /* FSGenreMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442141CD91F2600178065 /* FSGenreMachine.swift */; };
+		79140E301D1BB183004FE168 /* KMTableViewCellColoredAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792697A61CC2E58A000E495E /* KMTableViewCellColoredAccessory.m */; };
+		79140E311D1BB183004FE168 /* FSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7994420B1CD91F2600178065 /* FSImage.swift */; };
+		79140E321D1BB183004FE168 /* FSFoldersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697AA1CC38694000E495E /* FSFoldersViewController.swift */; };
+		79140E331D1BB183004FE168 /* FSDownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FBDABC1CC3E26F001841B7 /* FSDownloadsViewController.swift */; };
+		79140E341D1BB183004FE168 /* FSLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79125FA21CBB0DE600FAC9FF /* FSLocalStorage.swift */; };
+		79140E361D1BB183004FE168 /* Pods_FSVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D43A0EC25F361D6ADD561736 /* Pods_FSVideo.framework */; };
+		79140E381D1BB183004FE168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79125F571CBAF33800FAC9FF /* LaunchScreen.storyboard */; };
+		79140E391D1BB183004FE168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79125F561CBAF33800FAC9FF /* Assets.xcassets */; };
+		79140E3A1D1BB183004FE168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79125F591CBAF33800FAC9FF /* Main.storyboard */; };
+		79140E3B1D1BB183004FE168 /* TOS.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 797536AF1CD0073B0028E16C /* TOS.rtf */; };
+		79140E3C1D1BB183004FE168 /* About.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 797536B11CD007450028E16C /* About.rtf */; };
+		79140E4B1D246538004FE168 /* FSItemLinkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697B31CC3BADF000E495E /* FSItemLinkInfo.swift */; };
+		79140E4C1D24653A004FE168 /* FSItemLinkResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697B11CC39F84000E495E /* FSItemLinkResolver.swift */; };
+		792694E91CC23BEA000E495E /* FSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79268C181CC23BE6000E495E /* FSTabBarController.swift */; };
+		792694EA1CC23BEA000E495E /* FSSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79268C1A1CC23BE6000E495E /* FSSearchViewController.swift */; };
+		792697701CC23E64000E495E /* FSMovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926976F1CC23E64000E495E /* FSMovieTableViewCell.swift */; };
+		792697721CC2714E000E495E /* FSPredefinedTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697711CC2714E000E495E /* FSPredefinedTableViewDataSource.swift */; };
+		792697741CC27168000E495E /* FSPredefinedTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697731CC27168000E495E /* FSPredefinedTableViewSection.swift */; };
+		792697761CC27815000E495E /* FSMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697751CC27815000E495E /* FSMovieViewController.swift */; };
+		792697781CC2783E000E495E /* FSPredefinedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697771CC2783E000E495E /* FSPredefinedTableViewCell.swift */; };
+		7926977A1CC27B1B000E495E /* FSMovieHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697791CC27B1B000E495E /* FSMovieHeaderCell.swift */; };
+		7926977C1CC27BFB000E495E /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926977B1CC27BFB000E495E /* UIViewControllerExtensions.swift */; };
+		792697801CC292A4000E495E /* FSTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926977F1CC292A4000E495E /* FSTheme.swift */; };
+		792697891CC29E2F000E495E /* UIImageView+Fade.m in Sources */ = {isa = PBXBuildFile; fileRef = 792697881CC29E2F000E495E /* UIImageView+Fade.m */; };
+		792697921CC29EAD000E495E /* UIBarButtonItem+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 792697911CC29EAD000E495E /* UIBarButtonItem+Appearance.m */; };
+		792697941CC2AA86000E495E /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697931CC2AA86000E495E /* UIColorExtensions.swift */; };
+		792697961CC2B0B8000E495E /* FSMovieSegmentControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697951CC2B0B8000E495E /* FSMovieSegmentControlCell.swift */; };
+		792697981CC2B24B000E495E /* FSMovieInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697971CC2B24B000E495E /* FSMovieInfoCell.swift */; };
+		7926979A1CC2B392000E495E /* FSMovieInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697991CC2B392000E495E /* FSMovieInformationCell.swift */; };
+		7926979C1CC2BA32000E495E /* FSMovieSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926979B1CC2BA32000E495E /* FSMovieSummaryCell.swift */; };
+		7926979E1CC2BDB9000E495E /* FSMovieCastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926979D1CC2BDB9000E495E /* FSMovieCastCell.swift */; };
+		792697A01CC2C261000E495E /* FSMovieReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926979F1CC2C261000E495E /* FSMovieReviewCell.swift */; };
+		792697A21CC2C3DF000E495E /* FSColorBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697A11CC2C3DF000E495E /* FSColorBundle.swift */; };
+		792697A41CC2E1BC000E495E /* FSMovieFolderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697A31CC2E1BC000E495E /* FSMovieFolderCell.swift */; };
+		792697A71CC2E58A000E495E /* KMTableViewCellColoredAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = 792697A61CC2E58A000E495E /* KMTableViewCellColoredAccessory.m */; };
+		792697AB1CC38694000E495E /* FSFoldersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697AA1CC38694000E495E /* FSFoldersViewController.swift */; };
+		792697AD1CC3899C000E495E /* FSFilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697AC1CC3899C000E495E /* FSFilesViewController.swift */; };
+		792697AF1CC38DB0000E495E /* FSFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792697AE1CC38DB0000E495E /* FSFileCell.swift */; };
+		794A642F1D2476680084CA32 /* UIImage+ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 792697B61CC3BD57000E495E /* UIImage+ProgressView.m */; };
+		794A64331D247E990084CA32 /* Extended.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794A64321D247E990084CA32 /* Extended.storyboard */; };
+		794A643F1D270AFD0084CA32 /* FSProxyConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794A643D1D270AFD0084CA32 /* FSProxyConfiguration.swift */; };
+		794A64441D2720130084CA32 /* FSSettingsProxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794A64431D2720130084CA32 /* FSSettingsProxyViewController.swift */; };
+		794A64461D2723270084CA32 /* FSTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794A64451D2723270084CA32 /* FSTextFieldTableViewCell.swift */; };
+		794A64471D2723270084CA32 /* FSTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794A64451D2723270084CA32 /* FSTextFieldTableViewCell.swift */; };
+		794A64491D28E8FC0084CA32 /* NSRangeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794A64481D28E8FC0084CA32 /* NSRangeExtensions.swift */; };
+		794A644A1D28E8FC0084CA32 /* NSRangeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794A64481D28E8FC0084CA32 /* NSRangeExtensions.swift */; };
+		795F220A1CE6736900AC6C71 /* FSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795F22091CE6736900AC6C71 /* FSLog.swift */; };
+		797536AC1CCEC0BD0028E16C /* FSAboutFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797536AB1CCEC0BD0028E16C /* FSAboutFooterCell.swift */; };
+		797536AE1CCFF9B90028E16C /* FSSwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797536AD1CCFF9B90028E16C /* FSSwitchTableViewCell.swift */; };
+		797536B01CD0073B0028E16C /* TOS.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 797536AF1CD0073B0028E16C /* TOS.rtf */; };
+		797536B21CD007450028E16C /* About.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 797536B11CD007450028E16C /* About.rtf */; };
+		7976A5AE1CDFE8A000D8B574 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 7976A5AD1CDFE8A000D8B574 /* UIDevice-Hardware.m */; };
+		799441F61CD521DE00178065 /* EXSearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799441F51CD521DE00178065 /* EXSearchRequest.swift */; };
+		799441F81CD5DB9600178065 /* XMLElementExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799441F71CD5DB9600178065 /* XMLElementExtensions.swift */; };
+		799441FA1CD60C2300178065 /* EXMovieInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799441F91CD60C2300178065 /* EXMovieInfoRequest.swift */; };
+		799441FC1CD678A400178065 /* FSFileCellTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799441FB1CD678A400178065 /* FSFileCellTableDelegate.swift */; };
+		799441FE1CD740C100178065 /* EXReviewsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799441FD1CD740C100178065 /* EXReviewsRequest.swift */; };
+		799442001CD7595A00178065 /* FSSearchResultsTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799441FF1CD7595A00178065 /* FSSearchResultsTableDataSource.swift */; };
+		799442041CD9169800178065 /* FSSettingsContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442031CD9169800178065 /* FSSettingsContentViewController.swift */; };
+		7994421B1CD91F2600178065 /* FSCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442061CD91F2600178065 /* FSCountry.swift */; };
+		7994421C1CD91F2600178065 /* FSFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442071CD91F2600178065 /* FSFile.swift */; };
+		7994421D1CD91F2600178065 /* FSFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442081CD91F2600178065 /* FSFolder.swift */; };
+		7994421E1CD91F2600178065 /* FSGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442091CD91F2600178065 /* FSGenre.swift */; };
+		7994421F1CD91F2600178065 /* FSHuman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7994420A1CD91F2600178065 /* FSHuman.swift */; };
+		799442201CD91F2600178065 /* FSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7994420B1CD91F2600178065 /* FSImage.swift */; };
+		799442211CD91F2600178065 /* FSMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7994420C1CD91F2600178065 /* FSMovie.swift */; };
+		799442221CD91F2600178065 /* FSReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7994420D1CD91F2600178065 /* FSReview.swift */; };
+		799442231CD91F2600178065 /* FSSearchQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7994420E1CD91F2600178065 /* FSSearchQuery.swift */; };
+		799442241CD91F2600178065 /* FSYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7994420F1CD91F2600178065 /* FSYear.swift */; };
+		799442251CD91F2600178065 /* FSCountryMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442111CD91F2600178065 /* FSCountryMachine.swift */; };
+		799442261CD91F2600178065 /* FSFileMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442121CD91F2600178065 /* FSFileMachine.swift */; };
+		799442271CD91F2600178065 /* FSFolderMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442131CD91F2600178065 /* FSFolderMachine.swift */; };
+		799442281CD91F2600178065 /* FSGenreMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442141CD91F2600178065 /* FSGenreMachine.swift */; };
+		799442291CD91F2600178065 /* FSHumanMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442151CD91F2600178065 /* FSHumanMachine.swift */; };
+		7994422A1CD91F2600178065 /* FSImageMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442161CD91F2600178065 /* FSImageMachine.swift */; };
+		7994422B1CD91F2600178065 /* FSMovieMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442171CD91F2600178065 /* FSMovieMachine.swift */; };
+		7994422C1CD91F2600178065 /* FSReviewMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442181CD91F2600178065 /* FSReviewMachine.swift */; };
+		7994422D1CD91F2600178065 /* FSSearchQueryMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442191CD91F2600178065 /* FSSearchQueryMachine.swift */; };
+		7994422E1CD91F2600178065 /* FSYearMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7994421A1CD91F2600178065 /* FSYearMachine.swift */; };
+		799442331CDBF8D400178065 /* EXFileURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799442321CDBF8D400178065 /* EXFileURLRequest.swift */; };
+		79BB82F41D295C42005D1FBC /* FSPredefinedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BB82F31D295C42005D1FBC /* FSPredefinedTableViewController.swift */; };
+		79BB82F51D295C42005D1FBC /* FSPredefinedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BB82F31D295C42005D1FBC /* FSPredefinedTableViewController.swift */; };
+		79C8CDFB1D2B1E55002C136B /* UIView+Enumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C8CDFA1D2B1E55002C136B /* UIView+Enumeration.m */; };
+		79C8CDFC1D2B1E55002C136B /* UIView+Enumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C8CDFA1D2B1E55002C136B /* UIView+Enumeration.m */; };
+		79CE1DC01CC9759C00134788 /* FSConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CE1DBF1CC9759C00134788 /* FSConfig.swift */; };
+		79CE1DC21CCAACD700134788 /* FSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CE1DC11CCAACD700134788 /* FSTableViewController.swift */; };
+		79CE1DC61CCAB54F00134788 /* FSSettingsThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CE1DC51CCAB54F00134788 /* FSSettingsThemeViewController.swift */; };
+		79CE1DC81CCAB81900134788 /* FSAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CE1DC71CCAB81900134788 /* FSAboutViewController.swift */; };
+		79CE1DCA1CCAD27000134788 /* FSTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CE1DC91CCAD27000134788 /* FSTextViewController.swift */; };
+		79E232F71CC56D84007EB1D8 /* FSRecentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E232F61CC56D84007EB1D8 /* FSRecentsViewController.swift */; };
+		79E232FA1CC57EAD007EB1D8 /* FSMoviesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E232F91CC57EAD007EB1D8 /* FSMoviesListViewController.swift */; };
+		79E232FC1CC57F3D007EB1D8 /* FSFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E232FB1CC57F3D007EB1D8 /* FSFavoritesViewController.swift */; };
+		79E232FF1CC582D4007EB1D8 /* FSSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E232FE1CC582D4007EB1D8 /* FSSettingsViewController.swift */; };
+		79E233011CC6B1CC007EB1D8 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E233001CC6B1CC007EB1D8 /* UIImageExtensions.swift */; };
+		79FBDABA1CC3CC03001841B7 /* FSVideoPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FBDAB91CC3CC03001841B7 /* FSVideoPlayerController.swift */; };
+		F907E2BB9F5F1F2DA49D2755 /* Pods_FSVideo_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFE58619B7535285616C715 /* Pods_FSVideo_.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3CAD02E97B987CB33D4AFBC5 /* Pods-FSVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FSVideo/Pods-FSVideo.release.xcconfig"; sourceTree = "<group>"; };
+		3F19DF5299A009042A0D223B /* Pods-FSVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FSVideo/Pods-FSVideo.debug.xcconfig"; sourceTree = "<group>"; };
+		5EFE58619B7535285616C715 /* Pods_FSVideo_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSVideo_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		724342883AF8C9AED64CBAF3 /* Pods-FSVideo+.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSVideo+.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FSVideo+/Pods-FSVideo+.debug.xcconfig"; sourceTree = "<group>"; };
+		79125F3E1CBAF2ED00FAC9FF /* FSVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79125F561CBAF33800FAC9FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79125F581CBAF33800FAC9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79125F5A1CBAF33800FAC9FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79125F5D1CBAF33800FAC9FF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79125F681CBAF37B00FAC9FF /* DataBase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataBase.xcdatamodel; sourceTree = "<group>"; };
+		79125F921CBB001C00FAC9FF /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		79125F941CBB024700FAC9FF /* NSURLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLExtensions.swift; sourceTree = "<group>"; };
+		79125F9F1CBB0DE600FAC9FF /* FSLocalStorage+Context.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FSLocalStorage+Context.swift"; sourceTree = "<group>"; };
+		79125FA01CBB0DE600FAC9FF /* FSLocalStorage+Entities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FSLocalStorage+Entities.swift"; sourceTree = "<group>"; };
+		79125FA11CBB0DE600FAC9FF /* FSLocalStorage+Fetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FSLocalStorage+Fetch.swift"; sourceTree = "<group>"; };
+		79125FA21CBB0DE600FAC9FF /* FSLocalStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSLocalStorage.swift; sourceTree = "<group>"; };
+		79125FA41CBB0DE600FAC9FF /* FSDatabaseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSDatabaseEntity.swift; sourceTree = "<group>"; };
+		79125FC41CBC3D5B00FAC9FF /* FSWebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FSWebServices.swift; path = ../DataProviders/FSWebServices.swift; sourceTree = "<group>"; };
+		79125FC71CBC3E3400FAC9FF /* FSWebRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSWebRequest.swift; sourceTree = "<group>"; };
+		79125FC91CBC3F6E00FAC9FF /* FSSearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSSearchRequest.swift; sourceTree = "<group>"; };
+		7912602B1CBD743800FAC9FF /* FSFoldersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSFoldersRequest.swift; sourceTree = "<group>"; };
+		791260511CBD9D1500FAC9FF /* FSFileURLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSFileURLRequest.swift; sourceTree = "<group>"; };
+		791260541CBE33D100FAC9FF /* SetExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetExtensions.swift; sourceTree = "<group>"; };
+		791260561CBE3D0300FAC9FF /* FSReviewsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSReviewsRequest.swift; sourceTree = "<group>"; };
+		79140E431D1BB183004FE168 /* FSVideo+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FSVideo+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79268C181CC23BE6000E495E /* FSTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSTabBarController.swift; sourceTree = "<group>"; };
+		79268C1A1CC23BE6000E495E /* FSSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSSearchViewController.swift; sourceTree = "<group>"; };
+		7926976F1CC23E64000E495E /* FSMovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMovieTableViewCell.swift; sourceTree = "<group>"; };
+		792697711CC2714E000E495E /* FSPredefinedTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPredefinedTableViewDataSource.swift; sourceTree = "<group>"; };
+		792697731CC27168000E495E /* FSPredefinedTableViewSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPredefinedTableViewSection.swift; sourceTree = "<group>"; };
+		792697751CC27815000E495E /* FSMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMovieViewController.swift; sourceTree = "<group>"; };
+		792697771CC2783E000E495E /* FSPredefinedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPredefinedTableViewCell.swift; sourceTree = "<group>"; };
+		792697791CC27B1B000E495E /* FSMovieHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMovieHeaderCell.swift; sourceTree = "<group>"; };
+		7926977B1CC27BFB000E495E /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		7926977F1CC292A4000E495E /* FSTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSTheme.swift; sourceTree = "<group>"; };
+		792697861CC29E2F000E495E /* FSVideo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FSVideo-Bridging-Header.h"; sourceTree = "<group>"; };
+		792697871CC29E2F000E495E /* UIImageView+Fade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Fade.h"; sourceTree = "<group>"; };
+		792697881CC29E2F000E495E /* UIImageView+Fade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Fade.m"; sourceTree = "<group>"; };
+		792697901CC29EAD000E495E /* UIBarButtonItem+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Appearance.h"; sourceTree = "<group>"; };
+		792697911CC29EAD000E495E /* UIBarButtonItem+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Appearance.m"; sourceTree = "<group>"; };
+		792697931CC2AA86000E495E /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		792697951CC2B0B8000E495E /* FSMovieSegmentControlCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMovieSegmentControlCell.swift; sourceTree = "<group>"; };
+		792697971CC2B24B000E495E /* FSMovieInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMovieInfoCell.swift; sourceTree = "<group>"; };
+		792697991CC2B392000E495E /* FSMovieInformationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMovieInformationCell.swift; sourceTree = "<group>"; };
+		7926979B1CC2BA32000E495E /* FSMovieSummaryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMovieSummaryCell.swift; sourceTree = "<group>"; };
+		7926979D1CC2BDB9000E495E /* FSMovieCastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMovieCastCell.swift; sourceTree = "<group>"; };
+		7926979F1CC2C261000E495E /* FSMovieReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMovieReviewCell.swift; sourceTree = "<group>"; };
+		792697A11CC2C3DF000E495E /* FSColorBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSColorBundle.swift; sourceTree = "<group>"; };
+		792697A31CC2E1BC000E495E /* FSMovieFolderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMovieFolderCell.swift; sourceTree = "<group>"; };
+		792697A51CC2E58A000E495E /* KMTableViewCellColoredAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMTableViewCellColoredAccessory.h; sourceTree = "<group>"; };
+		792697A61CC2E58A000E495E /* KMTableViewCellColoredAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMTableViewCellColoredAccessory.m; sourceTree = "<group>"; };
+		792697AA1CC38694000E495E /* FSFoldersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSFoldersViewController.swift; sourceTree = "<group>"; };
+		792697AC1CC3899C000E495E /* FSFilesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSFilesViewController.swift; sourceTree = "<group>"; };
+		792697AE1CC38DB0000E495E /* FSFileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSFileCell.swift; sourceTree = "<group>"; };
+		792697B11CC39F84000E495E /* FSItemLinkResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSItemLinkResolver.swift; sourceTree = "<group>"; };
+		792697B31CC3BADF000E495E /* FSItemLinkInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSItemLinkInfo.swift; sourceTree = "<group>"; };
+		792697B51CC3BD57000E495E /* UIImage+ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ProgressView.h"; sourceTree = "<group>"; };
+		792697B61CC3BD57000E495E /* UIImage+ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ProgressView.m"; sourceTree = "<group>"; };
+		794A64321D247E990084CA32 /* Extended.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Extended.storyboard; sourceTree = "<group>"; };
+		794A64341D2481810084CA32 /* FSVideo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FSVideo.plist; sourceTree = "<group>"; };
+		794A64351D2481810084CA32 /* FSVideoExtended.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FSVideoExtended.plist; sourceTree = "<group>"; };
+		794A643D1D270AFD0084CA32 /* FSProxyConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSProxyConfiguration.swift; sourceTree = "<group>"; };
+		794A64431D2720130084CA32 /* FSSettingsProxyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSSettingsProxyViewController.swift; sourceTree = "<group>"; };
+		794A64451D2723270084CA32 /* FSTextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSTextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		794A64481D28E8FC0084CA32 /* NSRangeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSRangeExtensions.swift; sourceTree = "<group>"; };
+		795F22091CE6736900AC6C71 /* FSLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSLog.swift; sourceTree = "<group>"; };
+		797536AB1CCEC0BD0028E16C /* FSAboutFooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSAboutFooterCell.swift; sourceTree = "<group>"; };
+		797536AD1CCFF9B90028E16C /* FSSwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSSwitchTableViewCell.swift; sourceTree = "<group>"; };
+		797536AF1CD0073B0028E16C /* TOS.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = TOS.rtf; sourceTree = "<group>"; };
+		797536B11CD007450028E16C /* About.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = About.rtf; sourceTree = "<group>"; };
+		7976A5AC1CDFE8A000D8B574 /* UIDevice-Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Hardware.h"; sourceTree = "<group>"; };
+		7976A5AD1CDFE8A000D8B574 /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Hardware.m"; sourceTree = "<group>"; };
+		799441F51CD521DE00178065 /* EXSearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXSearchRequest.swift; sourceTree = "<group>"; };
+		799441F71CD5DB9600178065 /* XMLElementExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLElementExtensions.swift; sourceTree = "<group>"; };
+		799441F91CD60C2300178065 /* EXMovieInfoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXMovieInfoRequest.swift; sourceTree = "<group>"; };
+		799441FB1CD678A400178065 /* FSFileCellTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSFileCellTableDelegate.swift; sourceTree = "<group>"; };
+		799441FD1CD740C100178065 /* EXReviewsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXReviewsRequest.swift; sourceTree = "<group>"; };
+		799441FF1CD7595A00178065 /* FSSearchResultsTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSSearchResultsTableDataSource.swift; sourceTree = "<group>"; };
+		799442031CD9169800178065 /* FSSettingsContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSSettingsContentViewController.swift; sourceTree = "<group>"; };
+		799442061CD91F2600178065 /* FSCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSCountry.swift; sourceTree = "<group>"; };
+		799442071CD91F2600178065 /* FSFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSFile.swift; sourceTree = "<group>"; };
+		799442081CD91F2600178065 /* FSFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSFolder.swift; sourceTree = "<group>"; };
+		799442091CD91F2600178065 /* FSGenre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSGenre.swift; sourceTree = "<group>"; };
+		7994420A1CD91F2600178065 /* FSHuman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSHuman.swift; sourceTree = "<group>"; };
+		7994420B1CD91F2600178065 /* FSImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSImage.swift; sourceTree = "<group>"; };
+		7994420C1CD91F2600178065 /* FSMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMovie.swift; sourceTree = "<group>"; };
+		7994420D1CD91F2600178065 /* FSReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSReview.swift; sourceTree = "<group>"; };
+		7994420E1CD91F2600178065 /* FSSearchQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSSearchQuery.swift; sourceTree = "<group>"; };
+		7994420F1CD91F2600178065 /* FSYear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSYear.swift; sourceTree = "<group>"; };
+		799442111CD91F2600178065 /* FSCountryMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSCountryMachine.swift; sourceTree = "<group>"; };
+		799442121CD91F2600178065 /* FSFileMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSFileMachine.swift; sourceTree = "<group>"; };
+		799442131CD91F2600178065 /* FSFolderMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSFolderMachine.swift; sourceTree = "<group>"; };
+		799442141CD91F2600178065 /* FSGenreMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSGenreMachine.swift; sourceTree = "<group>"; };
+		799442151CD91F2600178065 /* FSHumanMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSHumanMachine.swift; sourceTree = "<group>"; };
+		799442161CD91F2600178065 /* FSImageMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSImageMachine.swift; sourceTree = "<group>"; };
+		799442171CD91F2600178065 /* FSMovieMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMovieMachine.swift; sourceTree = "<group>"; };
+		799442181CD91F2600178065 /* FSReviewMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSReviewMachine.swift; sourceTree = "<group>"; };
+		799442191CD91F2600178065 /* FSSearchQueryMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSSearchQueryMachine.swift; sourceTree = "<group>"; };
+		7994421A1CD91F2600178065 /* FSYearMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSYearMachine.swift; sourceTree = "<group>"; };
+		799442321CDBF8D400178065 /* EXFileURLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EXFileURLRequest.swift; sourceTree = "<group>"; };
+		79BB82F31D295C42005D1FBC /* FSPredefinedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPredefinedTableViewController.swift; sourceTree = "<group>"; };
+		79C8CDF91D2B1E55002C136B /* UIView+Enumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Enumeration.h"; sourceTree = "<group>"; };
+		79C8CDFA1D2B1E55002C136B /* UIView+Enumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Enumeration.m"; sourceTree = "<group>"; };
+		79CE1DBF1CC9759C00134788 /* FSConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSConfig.swift; sourceTree = "<group>"; };
+		79CE1DC11CCAACD700134788 /* FSTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSTableViewController.swift; sourceTree = "<group>"; };
+		79CE1DC51CCAB54F00134788 /* FSSettingsThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSSettingsThemeViewController.swift; sourceTree = "<group>"; };
+		79CE1DC71CCAB81900134788 /* FSAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSAboutViewController.swift; sourceTree = "<group>"; };
+		79CE1DC91CCAD27000134788 /* FSTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSTextViewController.swift; sourceTree = "<group>"; };
+		79E232F61CC56D84007EB1D8 /* FSRecentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSRecentsViewController.swift; sourceTree = "<group>"; };
+		79E232F91CC57EAD007EB1D8 /* FSMoviesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSMoviesListViewController.swift; sourceTree = "<group>"; };
+		79E232FB1CC57F3D007EB1D8 /* FSFavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSFavoritesViewController.swift; sourceTree = "<group>"; };
+		79E232FE1CC582D4007EB1D8 /* FSSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSSettingsViewController.swift; sourceTree = "<group>"; };
+		79E233001CC6B1CC007EB1D8 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		79FBDAB91CC3CC03001841B7 /* FSVideoPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSVideoPlayerController.swift; sourceTree = "<group>"; };
+		79FBDABC1CC3E26F001841B7 /* FSDownloadsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSDownloadsViewController.swift; sourceTree = "<group>"; };
+		79FBDAC11CC43437001841B7 /* FSDownloadedFileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSDownloadedFileCell.swift; sourceTree = "<group>"; };
+		84C2A857F626D5EBA9D023B5 /* Pods-FSVideo+.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSVideo+.release.xcconfig"; path = "Pods/Target Support Files/Pods-FSVideo+/Pods-FSVideo+.release.xcconfig"; sourceTree = "<group>"; };
+		D43A0EC25F361D6ADD561736 /* Pods_FSVideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSVideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79125F3B1CBAF2ED00FAC9FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D7C9B336899C4FCC442BD65 /* Pods_FSVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79140E351D1BB183004FE168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79140E361D1BB183004FE168 /* Pods_FSVideo.framework in Frameworks */,
+				F907E2BB9F5F1F2DA49D2755 /* Pods_FSVideo_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D5B4EE3A278825BA65FF473 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D43A0EC25F361D6ADD561736 /* Pods_FSVideo.framework */,
+				5EFE58619B7535285616C715 /* Pods_FSVideo_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79125F351CBAF2EC00FAC9FF = {
+			isa = PBXGroup;
+			children = (
+				79125F401CBAF2EF00FAC9FF /* FSVideo */,
+				79125F3F1CBAF2ED00FAC9FF /* Products */,
+				B7A69BFFECA292023D5E71F0 /* Pods */,
+				2D5B4EE3A278825BA65FF473 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79125F3F1CBAF2ED00FAC9FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79125F3E1CBAF2ED00FAC9FF /* FSVideo.app */,
+				79140E431D1BB183004FE168 /* FSVideo+.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79125F401CBAF2EF00FAC9FF /* FSVideo */ = {
+			isa = PBXGroup;
+			children = (
+				79125F531CBAF33800FAC9FF /* Config */,
+				79125F5B1CBAF33800FAC9FF /* Sources */,
+				79125F551CBAF33800FAC9FF /* Resources */,
+			);
+			path = FSVideo;
+			sourceTree = "<group>";
+		};
+		79125F531CBAF33800FAC9FF /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				794A64341D2481810084CA32 /* FSVideo.plist */,
+				794A64351D2481810084CA32 /* FSVideoExtended.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		79125F551CBAF33800FAC9FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79125F561CBAF33800FAC9FF /* Assets.xcassets */,
+				79125F571CBAF33800FAC9FF /* LaunchScreen.storyboard */,
+				79125F591CBAF33800FAC9FF /* Main.storyboard */,
+				794A64321D247E990084CA32 /* Extended.storyboard */,
+				797536AF1CD0073B0028E16C /* TOS.rtf */,
+				797536B11CD007450028E16C /* About.rtf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		79125F5B1CBAF33800FAC9FF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				792697851CC29E02000E495E /* Objective-C */,
+				79125F911CBB000E00FAC9FF /* Extensions */,
+				79125F5C1CBAF33800FAC9FF /* Controller */,
+				79125F5E1CBAF33800FAC9FF /* Model */,
+				79125F5F1CBAF33800FAC9FF /* UI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		79125F5C1CBAF33800FAC9FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				792697B01CC39D62000E495E /* Download */,
+				79125F5D1CBAF33800FAC9FF /* AppDelegate.swift */,
+				79CE1DBF1CC9759C00134788 /* FSConfig.swift */,
+				795F22091CE6736900AC6C71 /* FSLog.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		79125F5E1CBAF33800FAC9FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79125F671CBAF37B00FAC9FF /* DataBase.xcdatamodeld */,
+				79125FA31CBB0DE600FAC9FF /* Entities */,
+				79125F9E1CBB0DE600FAC9FF /* LocalStorage */,
+				79125FC61CBC3D7200FAC9FF /* Requests */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79125F5F1CBAF33800FAC9FF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				79FBDABB1CC3E25C001841B7 /* Downloads */,
+				79FBDAB81CC3CB9C001841B7 /* Player */,
+				79268C171CC23BE6000E495E /* Root */,
+				79268C151CC23BE6000E495E /* Common */,
+				79268C161CC23BE6000E495E /* Movie */,
+				79E232F81CC57E86007EB1D8 /* Favorites */,
+				79E232F51CC56D70007EB1D8 /* Recents */,
+				79E232FD1CC582C4007EB1D8 /* Settings */,
+				79268C191CC23BE6000E495E /* Search */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		79125F911CBB000E00FAC9FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				79125F921CBB001C00FAC9FF /* StringExtensions.swift */,
+				79125F941CBB024700FAC9FF /* NSURLExtensions.swift */,
+				791260541CBE33D100FAC9FF /* SetExtensions.swift */,
+				7926977B1CC27BFB000E495E /* UIViewControllerExtensions.swift */,
+				792697931CC2AA86000E495E /* UIColorExtensions.swift */,
+				79E233001CC6B1CC007EB1D8 /* UIImageExtensions.swift */,
+				799441F71CD5DB9600178065 /* XMLElementExtensions.swift */,
+				794A64481D28E8FC0084CA32 /* NSRangeExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		79125F9E1CBB0DE600FAC9FF /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				79125FA21CBB0DE600FAC9FF /* FSLocalStorage.swift */,
+				79125F9F1CBB0DE600FAC9FF /* FSLocalStorage+Context.swift */,
+				79125FA01CBB0DE600FAC9FF /* FSLocalStorage+Entities.swift */,
+				79125FA11CBB0DE600FAC9FF /* FSLocalStorage+Fetch.swift */,
+			);
+			name = LocalStorage;
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		79125FA31CBB0DE600FAC9FF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				79125FA41CBB0DE600FAC9FF /* FSDatabaseEntity.swift */,
+				799442051CD91F2600178065 /* Human */,
+				799442101CD91F2600178065 /* Machine */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		79125FC61CBC3D7200FAC9FF /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				79125FC41CBC3D5B00FAC9FF /* FSWebServices.swift */,
+				794A643D1D270AFD0084CA32 /* FSProxyConfiguration.swift */,
+				79125FC71CBC3E3400FAC9FF /* FSWebRequest.swift */,
+				79125FC91CBC3F6E00FAC9FF /* FSSearchRequest.swift */,
+				7912602B1CBD743800FAC9FF /* FSFoldersRequest.swift */,
+				791260511CBD9D1500FAC9FF /* FSFileURLRequest.swift */,
+				791260561CBE3D0300FAC9FF /* FSReviewsRequest.swift */,
+				799441F51CD521DE00178065 /* EXSearchRequest.swift */,
+				799441F91CD60C2300178065 /* EXMovieInfoRequest.swift */,
+				799441FD1CD740C100178065 /* EXReviewsRequest.swift */,
+				799442321CDBF8D400178065 /* EXFileURLRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		79268C151CC23BE6000E495E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				79BB82F31D295C42005D1FBC /* FSPredefinedTableViewController.swift */,
+				792697711CC2714E000E495E /* FSPredefinedTableViewDataSource.swift */,
+				792697731CC27168000E495E /* FSPredefinedTableViewSection.swift */,
+				792697771CC2783E000E495E /* FSPredefinedTableViewCell.swift */,
+				797536AD1CCFF9B90028E16C /* FSSwitchTableViewCell.swift */,
+				794A64451D2723270084CA32 /* FSTextFieldTableViewCell.swift */,
+				7926977F1CC292A4000E495E /* FSTheme.swift */,
+				792697A11CC2C3DF000E495E /* FSColorBundle.swift */,
+				79E232F91CC57EAD007EB1D8 /* FSMoviesListViewController.swift */,
+				79CE1DC11CCAACD700134788 /* FSTableViewController.swift */,
+				79CE1DC91CCAD27000134788 /* FSTextViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		79268C161CC23BE6000E495E /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				792697A91CC3862D000E495E /* Folders */,
+				792697A81CC3862D000E495E /* Files */,
+				792697751CC27815000E495E /* FSMovieViewController.swift */,
+				792697971CC2B24B000E495E /* FSMovieInfoCell.swift */,
+				792697791CC27B1B000E495E /* FSMovieHeaderCell.swift */,
+				792697951CC2B0B8000E495E /* FSMovieSegmentControlCell.swift */,
+				792697991CC2B392000E495E /* FSMovieInformationCell.swift */,
+				7926979B1CC2BA32000E495E /* FSMovieSummaryCell.swift */,
+				7926979D1CC2BDB9000E495E /* FSMovieCastCell.swift */,
+				7926979F1CC2C261000E495E /* FSMovieReviewCell.swift */,
+				792697A31CC2E1BC000E495E /* FSMovieFolderCell.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		79268C171CC23BE6000E495E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				79268C181CC23BE6000E495E /* FSTabBarController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		79268C191CC23BE6000E495E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				79268C1A1CC23BE6000E495E /* FSSearchViewController.swift */,
+				799441FF1CD7595A00178065 /* FSSearchResultsTableDataSource.swift */,
+				7926976F1CC23E64000E495E /* FSMovieTableViewCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		792697851CC29E02000E495E /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				792697861CC29E2F000E495E /* FSVideo-Bridging-Header.h */,
+				792697B51CC3BD57000E495E /* UIImage+ProgressView.h */,
+				792697B61CC3BD57000E495E /* UIImage+ProgressView.m */,
+				792697871CC29E2F000E495E /* UIImageView+Fade.h */,
+				792697881CC29E2F000E495E /* UIImageView+Fade.m */,
+				792697901CC29EAD000E495E /* UIBarButtonItem+Appearance.h */,
+				792697911CC29EAD000E495E /* UIBarButtonItem+Appearance.m */,
+				792697A51CC2E58A000E495E /* KMTableViewCellColoredAccessory.h */,
+				792697A61CC2E58A000E495E /* KMTableViewCellColoredAccessory.m */,
+				7976A5AC1CDFE8A000D8B574 /* UIDevice-Hardware.h */,
+				7976A5AD1CDFE8A000D8B574 /* UIDevice-Hardware.m */,
+				79C8CDF91D2B1E55002C136B /* UIView+Enumeration.h */,
+				79C8CDFA1D2B1E55002C136B /* UIView+Enumeration.m */,
+			);
+			path = "Objective-C";
+			sourceTree = "<group>";
+		};
+		792697A81CC3862D000E495E /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				792697AC1CC3899C000E495E /* FSFilesViewController.swift */,
+				792697AE1CC38DB0000E495E /* FSFileCell.swift */,
+				799441FB1CD678A400178065 /* FSFileCellTableDelegate.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		792697A91CC3862D000E495E /* Folders */ = {
+			isa = PBXGroup;
+			children = (
+				792697AA1CC38694000E495E /* FSFoldersViewController.swift */,
+			);
+			path = Folders;
+			sourceTree = "<group>";
+		};
+		792697B01CC39D62000E495E /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				792697B11CC39F84000E495E /* FSItemLinkResolver.swift */,
+				792697B31CC3BADF000E495E /* FSItemLinkInfo.swift */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		799442051CD91F2600178065 /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				799442061CD91F2600178065 /* FSCountry.swift */,
+				799442071CD91F2600178065 /* FSFile.swift */,
+				799442081CD91F2600178065 /* FSFolder.swift */,
+				799442091CD91F2600178065 /* FSGenre.swift */,
+				7994420A1CD91F2600178065 /* FSHuman.swift */,
+				7994420B1CD91F2600178065 /* FSImage.swift */,
+				7994420C1CD91F2600178065 /* FSMovie.swift */,
+				7994420D1CD91F2600178065 /* FSReview.swift */,
+				7994420E1CD91F2600178065 /* FSSearchQuery.swift */,
+				7994420F1CD91F2600178065 /* FSYear.swift */,
+			);
+			path = Human;
+			sourceTree = "<group>";
+		};
+		799442101CD91F2600178065 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				799442111CD91F2600178065 /* FSCountryMachine.swift */,
+				799442121CD91F2600178065 /* FSFileMachine.swift */,
+				799442131CD91F2600178065 /* FSFolderMachine.swift */,
+				799442141CD91F2600178065 /* FSGenreMachine.swift */,
+				799442151CD91F2600178065 /* FSHumanMachine.swift */,
+				799442161CD91F2600178065 /* FSImageMachine.swift */,
+				799442171CD91F2600178065 /* FSMovieMachine.swift */,
+				799442181CD91F2600178065 /* FSReviewMachine.swift */,
+				799442191CD91F2600178065 /* FSSearchQueryMachine.swift */,
+				7994421A1CD91F2600178065 /* FSYearMachine.swift */,
+			);
+			path = Machine;
+			sourceTree = "<group>";
+		};
+		79E232F51CC56D70007EB1D8 /* Recents */ = {
+			isa = PBXGroup;
+			children = (
+				79E232F61CC56D84007EB1D8 /* FSRecentsViewController.swift */,
+			);
+			path = Recents;
+			sourceTree = "<group>";
+		};
+		79E232F81CC57E86007EB1D8 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				79E232FB1CC57F3D007EB1D8 /* FSFavoritesViewController.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		79E232FD1CC582C4007EB1D8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				79E232FE1CC582D4007EB1D8 /* FSSettingsViewController.swift */,
+				79CE1DC51CCAB54F00134788 /* FSSettingsThemeViewController.swift */,
+				799442031CD9169800178065 /* FSSettingsContentViewController.swift */,
+				794A64431D2720130084CA32 /* FSSettingsProxyViewController.swift */,
+				79CE1DC71CCAB81900134788 /* FSAboutViewController.swift */,
+				797536AB1CCEC0BD0028E16C /* FSAboutFooterCell.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		79FBDAB81CC3CB9C001841B7 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				79FBDAB91CC3CC03001841B7 /* FSVideoPlayerController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		79FBDABB1CC3E25C001841B7 /* Downloads */ = {
+			isa = PBXGroup;
+			children = (
+				79FBDABC1CC3E26F001841B7 /* FSDownloadsViewController.swift */,
+				79FBDAC11CC43437001841B7 /* FSDownloadedFileCell.swift */,
+			);
+			path = Downloads;
+			sourceTree = "<group>";
+		};
+		B7A69BFFECA292023D5E71F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F19DF5299A009042A0D223B /* Pods-FSVideo.debug.xcconfig */,
+				3CAD02E97B987CB33D4AFBC5 /* Pods-FSVideo.release.xcconfig */,
+				724342883AF8C9AED64CBAF3 /* Pods-FSVideo+.debug.xcconfig */,
+				84C2A857F626D5EBA9D023B5 /* Pods-FSVideo+.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79125F3D1CBAF2ED00FAC9FF /* FSVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79125F501CBAF2F100FAC9FF /* Build configuration list for PBXNativeTarget "FSVideo" */;
+			buildPhases = (
+				57C6227BD2848D703B6A8705 /* Check Pods Manifest.lock */,
+				79125F3A1CBAF2ED00FAC9FF /* Sources */,
+				79125F3B1CBAF2ED00FAC9FF /* Frameworks */,
+				79125F3C1CBAF2ED00FAC9FF /* Resources */,
+				7A745B10C202B96EEB5BA4F6 /* Embed Pods Frameworks */,
+				ACD94E40FDD5174521C95A8C /* Copy Pods Resources */,
+				79FBDABE1CC41561001841B7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSVideo;
+			productName = FSVideo;
+			productReference = 79125F3E1CBAF2ED00FAC9FF /* FSVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79140DD81D1BB183004FE168 /* FSVideo+ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79140E401D1BB183004FE168 /* Build configuration list for PBXNativeTarget "FSVideo+" */;
+			buildPhases = (
+				79140DD91D1BB183004FE168 /* Check Pods Manifest.lock */,
+				79140DDA1D1BB183004FE168 /* Sources */,
+				79140E351D1BB183004FE168 /* Frameworks */,
+				79140E371D1BB183004FE168 /* Resources */,
+				79140E3D1D1BB183004FE168 /* Embed Pods Frameworks */,
+				79140E3E1D1BB183004FE168 /* Copy Pods Resources */,
+				79140E3F1D1BB183004FE168 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FSVideo+";
+			productName = FSVideo;
+			productReference = 79140E431D1BB183004FE168 /* FSVideo+.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79125F361CBAF2EC00FAC9FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Alexey Bodnya";
+				TargetAttributes = {
+					79125F3D1CBAF2ED00FAC9FF = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 69A9A3AGA9;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+					79140DD81D1BB183004FE168 = {
+						DevelopmentTeam = 69A9A3AGA9;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 79125F391CBAF2EC00FAC9FF /* Build configuration list for PBXProject "FSVideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79125F351CBAF2EC00FAC9FF;
+			productRefGroup = 79125F3F1CBAF2ED00FAC9FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79125F3D1CBAF2ED00FAC9FF /* FSVideo */,
+				79140DD81D1BB183004FE168 /* FSVideo+ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79125F3C1CBAF2ED00FAC9FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79125F631CBAF33800FAC9FF /* LaunchScreen.storyboard in Resources */,
+				79125F621CBAF33800FAC9FF /* Assets.xcassets in Resources */,
+				79125F641CBAF33800FAC9FF /* Main.storyboard in Resources */,
+				797536B01CD0073B0028E16C /* TOS.rtf in Resources */,
+				797536B21CD007450028E16C /* About.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79140E371D1BB183004FE168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79140E381D1BB183004FE168 /* LaunchScreen.storyboard in Resources */,
+				79140E391D1BB183004FE168 /* Assets.xcassets in Resources */,
+				79140E3A1D1BB183004FE168 /* Main.storyboard in Resources */,
+				79140E3B1D1BB183004FE168 /* TOS.rtf in Resources */,
+				79140E3C1D1BB183004FE168 /* About.rtf in Resources */,
+				794A64331D247E990084CA32 /* Extended.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57C6227BD2848D703B6A8705 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		79140DD91D1BB183004FE168 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		79140E3D1D1BB183004FE168 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FSVideo+/Pods-FSVideo+-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79140E3E1D1BB183004FE168 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FSVideo+/Pods-FSVideo+-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79140E3F1D1BB183004FE168 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" df79762764667772c1edfdc8c26de3aeebccc38a a87eb2b3b7f6e3314188bb42c4bd3e4c81b08b71c73e76b465212d5eb74b2b95";
+		};
+		79FBDABE1CC41561001841B7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 5d1714abe16081837e68c809e48ee34f15656b25 3a82885b4eb19ec865c77b2189fe679a1db487193dbe175a1a049d558944cd5e";
+		};
+		7A745B10C202B96EEB5BA4F6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FSVideo/Pods-FSVideo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACD94E40FDD5174521C95A8C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FSVideo/Pods-FSVideo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79125F3A1CBAF2ED00FAC9FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792697AD1CC3899C000E495E /* FSFilesViewController.swift in Sources */,
+				7994422B1CD91F2600178065 /* FSMovieMachine.swift in Sources */,
+				792697891CC29E2F000E495E /* UIImageView+Fade.m in Sources */,
+				792697721CC2714E000E495E /* FSPredefinedTableViewDataSource.swift in Sources */,
+				79125FC51CBC3D5B00FAC9FF /* FSWebServices.swift in Sources */,
+				792697781CC2783E000E495E /* FSPredefinedTableViewCell.swift in Sources */,
+				7994422C1CD91F2600178065 /* FSReviewMachine.swift in Sources */,
+				795F220A1CE6736900AC6C71 /* FSLog.swift in Sources */,
+				79125F951CBB024700FAC9FF /* NSURLExtensions.swift in Sources */,
+				799441F61CD521DE00178065 /* EXSearchRequest.swift in Sources */,
+				792697801CC292A4000E495E /* FSTheme.swift in Sources */,
+				7926977C1CC27BFB000E495E /* UIViewControllerExtensions.swift in Sources */,
+				7994421D1CD91F2600178065 /* FSFolder.swift in Sources */,
+				79E232F71CC56D84007EB1D8 /* FSRecentsViewController.swift in Sources */,
+				794A64461D2723270084CA32 /* FSTextFieldTableViewCell.swift in Sources */,
+				792697A01CC2C261000E495E /* FSMovieReviewCell.swift in Sources */,
+				799442261CD91F2600178065 /* FSFileMachine.swift in Sources */,
+				79CE1DC81CCAB81900134788 /* FSAboutViewController.swift in Sources */,
+				799442001CD7595A00178065 /* FSSearchResultsTableDataSource.swift in Sources */,
+				799442231CD91F2600178065 /* FSSearchQuery.swift in Sources */,
+				799442041CD9169800178065 /* FSSettingsContentViewController.swift in Sources */,
+				7994421C1CD91F2600178065 /* FSFile.swift in Sources */,
+				7994422D1CD91F2600178065 /* FSSearchQueryMachine.swift in Sources */,
+				799442221CD91F2600178065 /* FSReview.swift in Sources */,
+				79140E4C1D24653A004FE168 /* FSItemLinkResolver.swift in Sources */,
+				79125FCA1CBC3F6E00FAC9FF /* FSSearchRequest.swift in Sources */,
+				799441F81CD5DB9600178065 /* XMLElementExtensions.swift in Sources */,
+				791260521CBD9D1500FAC9FF /* FSFileURLRequest.swift in Sources */,
+				79E232FF1CC582D4007EB1D8 /* FSSettingsViewController.swift in Sources */,
+				79140E4B1D246538004FE168 /* FSItemLinkInfo.swift in Sources */,
+				794A642F1D2476680084CA32 /* UIImage+ProgressView.m in Sources */,
+				79CE1DC21CCAACD700134788 /* FSTableViewController.swift in Sources */,
+				794A64491D28E8FC0084CA32 /* NSRangeExtensions.swift in Sources */,
+				792697761CC27815000E495E /* FSMovieViewController.swift in Sources */,
+				7994422E1CD91F2600178065 /* FSYearMachine.swift in Sources */,
+				792697AF1CC38DB0000E495E /* FSFileCell.swift in Sources */,
+				79125FB51CBB0DE600FAC9FF /* FSDatabaseEntity.swift in Sources */,
+				792694EA1CC23BEA000E495E /* FSSearchViewController.swift in Sources */,
+				799442241CD91F2600178065 /* FSYear.swift in Sources */,
+				792697A41CC2E1BC000E495E /* FSMovieFolderCell.swift in Sources */,
+				7926979E1CC2BDB9000E495E /* FSMovieCastCell.swift in Sources */,
+				799442251CD91F2600178065 /* FSCountryMachine.swift in Sources */,
+				799441FC1CD678A400178065 /* FSFileCellTableDelegate.swift in Sources */,
+				79E233011CC6B1CC007EB1D8 /* UIImageExtensions.swift in Sources */,
+				792697941CC2AA86000E495E /* UIColorExtensions.swift in Sources */,
+				791260571CBE3D0300FAC9FF /* FSReviewsRequest.swift in Sources */,
+				799441FA1CD60C2300178065 /* EXMovieInfoRequest.swift in Sources */,
+				792697921CC29EAD000E495E /* UIBarButtonItem+Appearance.m in Sources */,
+				799441FE1CD740C100178065 /* EXReviewsRequest.swift in Sources */,
+				7994421B1CD91F2600178065 /* FSCountry.swift in Sources */,
+				79125FB21CBB0DE600FAC9FF /* FSLocalStorage+Entities.swift in Sources */,
+				797536AE1CCFF9B90028E16C /* FSSwitchTableViewCell.swift in Sources */,
+				799442291CD91F2600178065 /* FSHumanMachine.swift in Sources */,
+				79125FB11CBB0DE600FAC9FF /* FSLocalStorage+Context.swift in Sources */,
+				79CE1DCA1CCAD27000134788 /* FSTextViewController.swift in Sources */,
+				7994421F1CD91F2600178065 /* FSHuman.swift in Sources */,
+				792697981CC2B24B000E495E /* FSMovieInfoCell.swift in Sources */,
+				7926979C1CC2BA32000E495E /* FSMovieSummaryCell.swift in Sources */,
+				797536AC1CCEC0BD0028E16C /* FSAboutFooterCell.swift in Sources */,
+				792697A21CC2C3DF000E495E /* FSColorBundle.swift in Sources */,
+				792697961CC2B0B8000E495E /* FSMovieSegmentControlCell.swift in Sources */,
+				79125F651CBAF33800FAC9FF /* AppDelegate.swift in Sources */,
+				799442331CDBF8D400178065 /* EXFileURLRequest.swift in Sources */,
+				79C8CDFB1D2B1E55002C136B /* UIView+Enumeration.m in Sources */,
+				7994421E1CD91F2600178065 /* FSGenre.swift in Sources */,
+				79125FB31CBB0DE600FAC9FF /* FSLocalStorage+Fetch.swift in Sources */,
+				799442271CD91F2600178065 /* FSFolderMachine.swift in Sources */,
+				79125F931CBB001C00FAC9FF /* StringExtensions.swift in Sources */,
+				7926979A1CC2B392000E495E /* FSMovieInformationCell.swift in Sources */,
+				7976A5AE1CDFE8A000D8B574 /* UIDevice-Hardware.m in Sources */,
+				792694E91CC23BEA000E495E /* FSTabBarController.swift in Sources */,
+				79FBDABA1CC3CC03001841B7 /* FSVideoPlayerController.swift in Sources */,
+				7994422A1CD91F2600178065 /* FSImageMachine.swift in Sources */,
+				7912602C1CBD743800FAC9FF /* FSFoldersRequest.swift in Sources */,
+				792697701CC23E64000E495E /* FSMovieTableViewCell.swift in Sources */,
+				79125FC81CBC3E3400FAC9FF /* FSWebRequest.swift in Sources */,
+				7926977A1CC27B1B000E495E /* FSMovieHeaderCell.swift in Sources */,
+				79CE1DC01CC9759C00134788 /* FSConfig.swift in Sources */,
+				791260551CBE33D100FAC9FF /* SetExtensions.swift in Sources */,
+				792697741CC27168000E495E /* FSPredefinedTableViewSection.swift in Sources */,
+				79CE1DC61CCAB54F00134788 /* FSSettingsThemeViewController.swift in Sources */,
+				79E232FA1CC57EAD007EB1D8 /* FSMoviesListViewController.swift in Sources */,
+				799442211CD91F2600178065 /* FSMovie.swift in Sources */,
+				79E232FC1CC57F3D007EB1D8 /* FSFavoritesViewController.swift in Sources */,
+				79125F691CBAF37B00FAC9FF /* DataBase.xcdatamodeld in Sources */,
+				799442281CD91F2600178065 /* FSGenreMachine.swift in Sources */,
+				792697A71CC2E58A000E495E /* KMTableViewCellColoredAccessory.m in Sources */,
+				79BB82F41D295C42005D1FBC /* FSPredefinedTableViewController.swift in Sources */,
+				799442201CD91F2600178065 /* FSImage.swift in Sources */,
+				792697AB1CC38694000E495E /* FSFoldersViewController.swift in Sources */,
+				79125FB41CBB0DE600FAC9FF /* FSLocalStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79140DDA1D1BB183004FE168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79140DDB1D1BB183004FE168 /* FSFilesViewController.swift in Sources */,
+				79140DDC1D1BB183004FE168 /* FSMovieMachine.swift in Sources */,
+				79140DDD1D1BB183004FE168 /* UIImageView+Fade.m in Sources */,
+				79140DDE1D1BB183004FE168 /* FSPredefinedTableViewDataSource.swift in Sources */,
+				79140DDF1D1BB183004FE168 /* FSWebServices.swift in Sources */,
+				79140DE01D1BB183004FE168 /* FSPredefinedTableViewCell.swift in Sources */,
+				79140DE11D1BB183004FE168 /* FSReviewMachine.swift in Sources */,
+				79140DE21D1BB183004FE168 /* FSLog.swift in Sources */,
+				79140DE31D1BB183004FE168 /* NSURLExtensions.swift in Sources */,
+				79140DE41D1BB183004FE168 /* EXSearchRequest.swift in Sources */,
+				79140DE51D1BB183004FE168 /* FSTheme.swift in Sources */,
+				79140DE61D1BB183004FE168 /* UIViewControllerExtensions.swift in Sources */,
+				79140DE71D1BB183004FE168 /* FSFolder.swift in Sources */,
+				79C8CDFC1D2B1E55002C136B /* UIView+Enumeration.m in Sources */,
+				79140DE81D1BB183004FE168 /* FSRecentsViewController.swift in Sources */,
+				79140DE91D1BB183004FE168 /* FSMovieReviewCell.swift in Sources */,
+				79140DEA1D1BB183004FE168 /* FSFileMachine.swift in Sources */,
+				79140DEB1D1BB183004FE168 /* FSAboutViewController.swift in Sources */,
+				79140DEC1D1BB183004FE168 /* FSSearchResultsTableDataSource.swift in Sources */,
+				794A643F1D270AFD0084CA32 /* FSProxyConfiguration.swift in Sources */,
+				79140DED1D1BB183004FE168 /* FSSearchQuery.swift in Sources */,
+				79140DEE1D1BB183004FE168 /* FSSettingsContentViewController.swift in Sources */,
+				79140DEF1D1BB183004FE168 /* FSFile.swift in Sources */,
+				794A64441D2720130084CA32 /* FSSettingsProxyViewController.swift in Sources */,
+				79140DF01D1BB183004FE168 /* FSSearchQueryMachine.swift in Sources */,
+				79140DF11D1BB183004FE168 /* FSReview.swift in Sources */,
+				79140DF21D1BB183004FE168 /* FSSearchRequest.swift in Sources */,
+				79140DF31D1BB183004FE168 /* XMLElementExtensions.swift in Sources */,
+				79140DF41D1BB183004FE168 /* UIImage+ProgressView.m in Sources */,
+				79140DF51D1BB183004FE168 /* FSFileURLRequest.swift in Sources */,
+				79140DF61D1BB183004FE168 /* FSSettingsViewController.swift in Sources */,
+				79140DF71D1BB183004FE168 /* FSTableViewController.swift in Sources */,
+				79140DF81D1BB183004FE168 /* FSMovieViewController.swift in Sources */,
+				79140DF91D1BB183004FE168 /* FSYearMachine.swift in Sources */,
+				79140DFA1D1BB183004FE168 /* FSFileCell.swift in Sources */,
+				79140DFB1D1BB183004FE168 /* FSDatabaseEntity.swift in Sources */,
+				79140DFC1D1BB183004FE168 /* FSDownloadedFileCell.swift in Sources */,
+				79140DFD1D1BB183004FE168 /* FSSearchViewController.swift in Sources */,
+				79140DFE1D1BB183004FE168 /* FSYear.swift in Sources */,
+				79140DFF1D1BB183004FE168 /* FSMovieFolderCell.swift in Sources */,
+				79140E001D1BB183004FE168 /* FSMovieCastCell.swift in Sources */,
+				79140E011D1BB183004FE168 /* FSItemLinkInfo.swift in Sources */,
+				79140E021D1BB183004FE168 /* FSCountryMachine.swift in Sources */,
+				79140E031D1BB183004FE168 /* FSFileCellTableDelegate.swift in Sources */,
+				79140E041D1BB183004FE168 /* UIImageExtensions.swift in Sources */,
+				79140E051D1BB183004FE168 /* UIColorExtensions.swift in Sources */,
+				79140E061D1BB183004FE168 /* FSReviewsRequest.swift in Sources */,
+				79140E071D1BB183004FE168 /* EXMovieInfoRequest.swift in Sources */,
+				79140E081D1BB183004FE168 /* UIBarButtonItem+Appearance.m in Sources */,
+				79140E091D1BB183004FE168 /* EXReviewsRequest.swift in Sources */,
+				79140E0A1D1BB183004FE168 /* FSCountry.swift in Sources */,
+				79140E0B1D1BB183004FE168 /* FSLocalStorage+Entities.swift in Sources */,
+				79140E0C1D1BB183004FE168 /* FSSwitchTableViewCell.swift in Sources */,
+				79140E0D1D1BB183004FE168 /* FSHumanMachine.swift in Sources */,
+				79140E0E1D1BB183004FE168 /* FSLocalStorage+Context.swift in Sources */,
+				79140E0F1D1BB183004FE168 /* FSTextViewController.swift in Sources */,
+				79140E101D1BB183004FE168 /* FSHuman.swift in Sources */,
+				79140E111D1BB183004FE168 /* FSMovieInfoCell.swift in Sources */,
+				79140E121D1BB183004FE168 /* FSMovieSummaryCell.swift in Sources */,
+				79140E131D1BB183004FE168 /* FSAboutFooterCell.swift in Sources */,
+				79140E151D1BB183004FE168 /* FSColorBundle.swift in Sources */,
+				79140E161D1BB183004FE168 /* FSMovieSegmentControlCell.swift in Sources */,
+				79140E171D1BB183004FE168 /* AppDelegate.swift in Sources */,
+				79140E181D1BB183004FE168 /* EXFileURLRequest.swift in Sources */,
+				79140E191D1BB183004FE168 /* FSGenre.swift in Sources */,
+				79140E1A1D1BB183004FE168 /* FSLocalStorage+Fetch.swift in Sources */,
+				79140E1B1D1BB183004FE168 /* FSFolderMachine.swift in Sources */,
+				79140E1C1D1BB183004FE168 /* StringExtensions.swift in Sources */,
+				79140E1D1D1BB183004FE168 /* FSMovieInformationCell.swift in Sources */,
+				79140E1E1D1BB183004FE168 /* UIDevice-Hardware.m in Sources */,
+				79140E1F1D1BB183004FE168 /* FSTabBarController.swift in Sources */,
+				79140E201D1BB183004FE168 /* FSVideoPlayerController.swift in Sources */,
+				79140E211D1BB183004FE168 /* FSImageMachine.swift in Sources */,
+				79140E221D1BB183004FE168 /* FSFoldersRequest.swift in Sources */,
+				79140E231D1BB183004FE168 /* FSMovieTableViewCell.swift in Sources */,
+				794A644A1D28E8FC0084CA32 /* NSRangeExtensions.swift in Sources */,
+				79140E241D1BB183004FE168 /* FSWebRequest.swift in Sources */,
+				79140E251D1BB183004FE168 /* FSMovieHeaderCell.swift in Sources */,
+				79140E261D1BB183004FE168 /* FSConfig.swift in Sources */,
+				79140E271D1BB183004FE168 /* SetExtensions.swift in Sources */,
+				794A64471D2723270084CA32 /* FSTextFieldTableViewCell.swift in Sources */,
+				79140E281D1BB183004FE168 /* FSPredefinedTableViewSection.swift in Sources */,
+				79140E291D1BB183004FE168 /* FSSettingsThemeViewController.swift in Sources */,
+				79140E2A1D1BB183004FE168 /* FSMoviesListViewController.swift in Sources */,
+				79140E2B1D1BB183004FE168 /* FSMovie.swift in Sources */,
+				79140E2C1D1BB183004FE168 /* FSFavoritesViewController.swift in Sources */,
+				79BB82F51D295C42005D1FBC /* FSPredefinedTableViewController.swift in Sources */,
+				79140E2D1D1BB183004FE168 /* FSItemLinkResolver.swift in Sources */,
+				79140E2E1D1BB183004FE168 /* DataBase.xcdatamodeld in Sources */,
+				79140E2F1D1BB183004FE168 /* FSGenreMachine.swift in Sources */,
+				79140E301D1BB183004FE168 /* KMTableViewCellColoredAccessory.m in Sources */,
+				79140E311D1BB183004FE168 /* FSImage.swift in Sources */,
+				79140E321D1BB183004FE168 /* FSFoldersViewController.swift in Sources */,
+				79140E331D1BB183004FE168 /* FSDownloadsViewController.swift in Sources */,
+				79140E341D1BB183004FE168 /* FSLocalStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79125F571CBAF33800FAC9FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79125F581CBAF33800FAC9FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		79125F591CBAF33800FAC9FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79125F5A1CBAF33800FAC9FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79125F4E1CBAF2F100FAC9FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79125F4F1CBAF2F100FAC9FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79125F511CBAF2F100FAC9FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F19DF5299A009042A0D223B /* Pods-FSVideo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"ANIMATED_GIF_SUPPORT=1",
+					"EXTENDED=0",
+				);
+				INFOPLIST_FILE = FSVideo/Config/FSVideo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.abodnya.FSVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FSVideo/Sources/Objective-C/FSVideo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79125F521CBAF2F100FAC9FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAD02E97B987CB33D4AFBC5 /* Pods-FSVideo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"ANIMATED_GIF_SUPPORT=1",
+					"EXTENDED=0",
+				);
+				INFOPLIST_FILE = FSVideo/Config/FSVideo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DRELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.abodnya.FSVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FSVideo/Sources/Objective-C/FSVideo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		79140E411D1BB183004FE168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 724342883AF8C9AED64CBAF3 /* Pods-FSVideo+.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"ANIMATED_GIF_SUPPORT=1",
+					"EXTENDED=1",
+				);
+				INFOPLIST_FILE = FSVideo/Config/FSVideoExtended.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDEBUG \"-D\" \"EXTENDED\"";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.abodnya.FSVideo.extended;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FSVideo/Sources/Objective-C/FSVideo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79140E421D1BB183004FE168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C2A857F626D5EBA9D023B5 /* Pods-FSVideo+.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"ANIMATED_GIF_SUPPORT=1",
+					"EXTENDED=1",
+				);
+				INFOPLIST_FILE = FSVideo/Config/FSVideoExtended.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DRELEASE \"-D\" \"EXTENDED\"";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.abodnya.FSVideo.extended;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FSVideo/Sources/Objective-C/FSVideo-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79125F391CBAF2EC00FAC9FF /* Build configuration list for PBXProject "FSVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79125F4E1CBAF2F100FAC9FF /* Debug */,
+				79125F4F1CBAF2F100FAC9FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79125F501CBAF2F100FAC9FF /* Build configuration list for PBXNativeTarget "FSVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79125F511CBAF2F100FAC9FF /* Debug */,
+				79125F521CBAF2F100FAC9FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79140E401D1BB183004FE168 /* Build configuration list for PBXNativeTarget "FSVideo+" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79140E411D1BB183004FE168 /* Debug */,
+				79140E421D1BB183004FE168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		79125F671CBAF37B00FAC9FF /* DataBase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				79125F681CBAF37B00FAC9FF /* DataBase.xcdatamodel */,
+			);
+			currentVersion = 79125F681CBAF37B00FAC9FF /* DataBase.xcdatamodel */;
+			path = DataBase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 79125F361CBAF2EC00FAC9FF /* Project object */;
+}
